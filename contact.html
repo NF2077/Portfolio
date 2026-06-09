@@ -10,11 +10,15 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">NF<span>2077</span></a>
-            <ul class="nav-links">
+            
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-menu-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -23,7 +27,6 @@
         </div>
     </nav>
 
-    <!-- CONTACT CORE CONTENT -->
     <main class="page-content">
         <section class="contact-wrapper">
             <div class="contact-header-text">
@@ -36,14 +39,12 @@
                         <i class="fa-regular fa-envelope"></i>
                         <div>
                             <h5>Email Resmi</h5>
-                            <!-- Tautan diperbarui agar langsung membuka Gmail Web di tab baru -->
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mcznewbalance@gmail.com" target="_blank">mcznewbalance@gmail.com</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- INTERACTIVE FORM -->
             <div class="form-box-container">
                 <form class="interactive-form" action="https://formspree.io/f/your-id" method="POST">
                     <div class="form-group-split">
@@ -70,10 +71,10 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 NF2077 • Secure Communications Channel.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
