@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | NF2077</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NF<span>2077</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="btn-nav active-btn">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTACT CORE CONTENT -->
+    <main class="page-content">
+        <section class="contact-wrapper">
+            <div class="contact-header-text">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2>Mari Mulai Kolaborasi</h2>
+                <p>Punya proyek menarik, tawaran kerja, atau sekadar ingin berdiskusi tentang arsitektur web? Kirimkan pesan Anda langsung melalui formulir di bawah ini atau melalui email resmi saya.</p>
+                
+                <div class="direct-channels">
+                    <div class="channel-card">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div>
+                            <h5>Email Resmi</h5>
+                            <a href="mailto:mcznewbalance@gmail.com">mcznewbalance@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE FORM -->
+            <div class="form-box-container">
+                <form class="interactive-form" action="https://formspree.io/f/your-id" method="POST">
+                    <div class="form-group-split">
+                        <div class="form-control">
+                            <label for="name">Nama Anda</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label for="subject">Subjek</label>
+                        <input type="text" id="subject" name="subject" placeholder="Tawaran Project / Lowongan Kerja" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Pesan Anda</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Halo NF2077, saya ingin mengajak Anda berkolaborasi..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit-form">Kirim Pesan <i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 NF2077 • Secure Communications Channel.</p>
+    </footer>
+
+</body>
+</html>
