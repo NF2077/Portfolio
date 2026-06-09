@@ -10,11 +10,15 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">NF<span>2077</span></a>
-            <ul class="nav-links">
+            
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-menu-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
@@ -23,13 +27,11 @@
         </div>
     </nav>
 
-    <!-- PROJECTS CORE CONTENT -->
     <main class="page-content">
         <div class="projects-header">
             <span class="section-tag">SHOWCASE</span>
             <h2>Project Yang Pernah Saya Garap</h2>
             
-            <!-- FILTER BUTTONS -->
             <div class="filter-container">
                 <button class="filter-btn active" onclick="filterSelection('all')">All</button>
                 <button class="filter-btn" onclick="filterSelection('landing')">Landing Page</button>
@@ -37,7 +39,6 @@
             </div>
         </div>
 
-        <!-- PROJECTS GRID -->
         <div class="projects-grid">
             <div class="project-card filter-item landing">
                 <div class="project-img-placeholder">
@@ -83,18 +84,16 @@
         </div>
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 NF2077 • Secure Communications Channel.</p>
     </footer>
 
-    <!-- INTERACTIVE FILTER SCRIPT -->
+    <script src="script.js"></script>
     <script>
         function filterSelection(category) {
             const items = document.getElementsByClassName('filter-item');
             const buttons = document.getElementsByClassName('filter-btn');
             
-            // Handle Active Button State
             for (let btn of buttons) {
                 if (btn.getAttribute('onclick').includes(category)) {
                     btn.classList.add('active');
@@ -103,7 +102,6 @@
                 }
             }
 
-            // Handle Filtering Logic
             for (let item of items) {
                 if (category === 'all') {
                     item.style.display = 'block';
