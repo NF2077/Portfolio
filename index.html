@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | NF2077</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">NF<span>2077</span></a>
-            <ul class="nav-links">
+            
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-menu-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -25,7 +27,6 @@
         </div>
     </nav>
 
-    <!-- MAIN HERO CONTENT -->
     <main class="page-content hero-main">
         <div class="hero-text">
             <span class="section-tag">AVAILABLE FOR FREELANCE / FULL-TIME</span>
@@ -33,16 +34,15 @@
             <p>Berfokus pada pembuatan antarmuka web modern dengan performa tinggi, struktur kode yang bersih, dan pengalaman pengguna yang interaktif.</p>
             <div class="hero-actions">
                 <a href="projects.html" class="btn-primary">Lihat Project <i class="fa-solid fa-arrow-right"></i></a>
-                <!-- Tautan diperbarui agar langsung membuka Gmail Web di tab baru -->
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mcznewbalance@gmail.com" target="_blank" class="btn-secondary">Hubungi Saya</a>
             </div>
         </div>
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 NF2077 • Secure Communications Channel.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
