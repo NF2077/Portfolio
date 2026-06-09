@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Portfolio | NF2077</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR COMPONENT -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NF<span>2077</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="mailto:mcznewbalance@gmail.com" class="btn-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- GALLERY CONTAINER -->
+    <main class="page-content">
+        <section class="portfolio-header">
+            <h2>Project Showcase</h2>
+            <p>Sistem arsip digital dari seluruh aplikasi web yang telah selesai dikerjakan.</p>
+            
+            <!-- JS TAXONOMY FILTERS -->
+            <div class="filter-group">
+                <button class="btn-filter active" data-filter="all">Semua</button>
+                <button class="btn-filter" data-filter="fe">Frontend</button>
+                <button class="btn-filter" data-filter="be">Backend / API</button>
+                <button class="btn-filter" data-filter="full">Fullstack</button>
+            </div>
+        </section>
+
+        <!-- CARDS GALLERY GRID -->
+        <section class="projects-gallery">
+            <div class="gallery-grid" id="gallery-grid">
+                
+                <!-- Card 1 (Fullstack) -->
+                <div class="project-item-card" data-category="full">
+                    <div class="item-img" style="background: linear-gradient(135deg, #1e1b4b, #4338ca);">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <div class="item-body">
+                        <span class="item-tag-tech">SaaS / Fullstack</span>
+                        <h4>Crypto Wallet Hub & Analytics</h4>
+                        <p>Dashboard pelacakan aset terenkripsi multiprogresif terintegrasi dengan chart grafik visual interaktif.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 (Frontend) -->
+                <div class="project-item-card" data-category="fe">
+                    <div class="item-img" style="background: linear-gradient(135deg, #064e3b, #047857);">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div class="item-body">
+                        <span class="item-tag-tech">UI/UX / Frontend</span>
+                        <h4>Cyberpunk UI Core Kit</h4>
+                        <p>Koleksi pustaka CSS modular dan komponen desain futuristik berkecepatan muat tinggi.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 (Backend) -->
+                <div class="project-item-card" data-category="be">
+                    <div class="item-img" style="background: linear-gradient(135deg, #7c2d12, #b45309);">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <div class="item-body">
+                        <span class="item-tag-tech">REST API / Backend</span>
+                        <h4>High-Traffic Gateway Engine</h4>
+                        <p>Sistem API mikro-servis tangguh yang mampu melayani ribuan request per detik dengan sistem JWT Auth.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA CONTACT ACTION ZONE -->
+        <section class="contact-footer-zone">
+            <div class="contact-anchor-card">
+                <h2>Mari Mulai Proyek Anda</h2>
+                <p>Silakan klik tombol di bawah ini untuk terhubung langsung dengan kotak masuk saya.</p>
+                <a href="mailto:mcznewbalance@gmail.com" class="btn-email-action">
+                    <i class="fa-regular fa-envelope"></i> mcznewbalance@gmail.com
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 NF2077 • Digital Architecture Workspace.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
