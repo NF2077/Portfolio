@@ -236,7 +236,7 @@ body {
 }
 
 /* ==========================================================================
-   PROJECTS PAGE & FILTER ENGINE
+   PROJECTS PAGE
    ========================================================================== */
 .projects-header {
     margin-bottom: 40px;
@@ -354,7 +354,7 @@ body {
 }
 
 /* ==========================================================================
-   CONTACT PAGE EXCLUSIVE FORM STYLES
+   CONTACT PAGE EXCLUSIVE
    ========================================================================== */
 .contact-wrapper {
     display: grid;
@@ -406,7 +406,6 @@ body {
     color: var(--neon-cyan);
 }
 
-/* FORM BOX DESIGN */
 .form-box-container {
     background: var(--bg-card);
     border: 1px solid var(--border-line);
@@ -488,20 +487,70 @@ footer p {
 }
 
 /* ==========================================================================
-   RESPONSIVE VIEWS
+   RESPONSIVENESS ENGINE (MODERN BREAKPOINTS)
    ========================================================================== */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text-bright);
+    font-size: 22px;
+    cursor: pointer;
+    padding: 8px;
+}
+
 @media (max-width: 900px) {
     .nav-container, .page-content {
         padding-left: 24px;
         padding-right: 24px;
     }
     .hero-text h1 { font-size: 40px; }
-    .about-grid { grid-template-columns: 1fr; gap: 40px; }
-    .contact-wrapper { grid-template-columns: 1fr; gap: 40px; }
+    .about-grid, .contact-wrapper { grid-template-columns: 1fr; gap: 40px; }
     .form-group-split { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
-    .nav-links { display: none; } /* Sederhana untuk kebutuhan dasar multi-page */
-    .hero-actions { flex-direction: column; }
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-card);
+        border-bottom: 1px solid var(--border-line);
+        padding: 24px;
+        gap: 20px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.mobile-active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .nav-links .btn-nav {
+        text-align: center;
+        width: 100%;
+        padding: 12px;
+        background: rgba(34, 211, 238, 0.1);
+        border-color: var(--neon-cyan);
+        color: var(--neon-cyan) !important;
+    }
+    
+    .hero-actions { 
+        flex-direction: column; 
+    }
+    
+    .hero-actions .btn-primary, .hero-actions .btn-secondary {
+        justify-content: center;
+    }
 }
