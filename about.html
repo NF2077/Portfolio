@@ -10,11 +10,15 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">NF<span>2077</span></a>
-            <ul class="nav-links">
+            
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-menu-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -23,13 +27,12 @@
         </div>
     </nav>
 
-    <!-- ABOUT CORE CONTENT -->
     <main class="page-content">
         <section class="about-grid">
             <div class="about-intro">
                 <span class="section-tag">MY STORY</span>
                 <h2>Membangun Solusi Digital Lewat Baris Kode</h2>
-                <p>Saya adalah seorang Front-End Developer yang antusias dalam menerjemahkan desain visual menjadi aplikasi web yang fungsional, responsif, dan mudah diakses. Ketertarikan saya pada dunia teknologi mendorong saya untuk terus mempelajari ekosistem web modern modern.</p>
+                <p>Saya adalah seorang Front-End Developer yang antusias dalam menerjemahkan desain visual menjadi aplikasi web yang fungsional, responsif, dan mudah diakses. Ketertarikan saya pada dunia teknologi mendorong saya untuk terus mempelajari ekosistem web modern.</p>
                 <p>Selain fokus pada penulisan kode yang rapi, saya juga sangat peduli terhadap performa kecepatan situs dan optimasi SEO teknis agar web tidak hanya terlihat bagus, tapi juga bekerja secara optimal.</p>
             </div>
             
@@ -45,10 +48,10 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 NF2077 • Secure Communications Channel.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
