@@ -1,4 +1,4 @@
-# 🚀 Welcome to my portfolio
+# 🚀 Welcome
 
 [![GitHub license](https://img.shields.io/github/license/NF2077/Portfolio?style=flat-square&color=38bdf8)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/NF2077/Portfolio?style=flat-square&color=818cf8)](https://github.com/NF2077/Portfolio/stargazers)
