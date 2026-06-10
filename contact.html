@@ -29,13 +29,14 @@
 
     <main class="page-content">
         <section class="contact-wrapper">
-            <div class="contact-header-text">
+            
+            <div class="contact-header-text animate-fade-in">
                 <span class="section-tag">GET IN TOUCH</span>
                 <h2>Mari Mulai Kolaborasi</h2>
-                <p>Punya proyek menarik, tawaran kerja, atau sekadar ingin berdiskusi tentang arsitektur web? Kirimkan pesan Anda langsung melalui formulir di bawah ini atau melalui email resmi saya.</p>
+                <p>Punya proyek menarik, tawaran kerja, atau sekadar ingin berdiskusi tentang arsitektur front-end web? Kirimkan pesan Anda langsung melalui formulir interaktif di samping atau hubungi saya via email resmi.</p>
                 
                 <div class="direct-channels">
-                    <div class="channel-card">
+                    <div class="channel-card animate-fade-in delay-150">
                         <i class="fa-regular fa-envelope"></i>
                         <div>
                             <h5>Email Resmi</h5>
@@ -45,8 +46,9 @@
                 </div>
             </div>
 
-            <div class="form-box-container">
-                <form class="interactive-form" action="https://formspree.io/f/your-id" method="POST">
+            <div class="form-box-container animate-fade-in delay-300">
+                <form class="interactive-form" action="https://formspree.io/f/KODE_HASHID_KAMU" method="POST">
+                    
                     <div class="form-group-split">
                         <div class="form-control">
                             <label for="name">Nama Anda</label>
@@ -57,17 +59,23 @@
                             <input type="email" id="email" name="email" placeholder="john@example.com" required>
                         </div>
                     </div>
+                    
                     <div class="form-control">
                         <label for="subject">Subjek</label>
                         <input type="text" id="subject" name="subject" placeholder="Tawaran Project / Lowongan Kerja" required>
                     </div>
+                    
                     <div class="form-control">
                         <label for="message">Pesan Anda</label>
                         <textarea id="message" name="message" rows="6" placeholder="Halo NF2077, saya ingin mengajak Anda berkolaborasi..." required></textarea>
                     </div>
-                    <button type="submit" class="btn-submit-form">Kirim Pesan <i class="fa-regular fa-paper-plane"></i></button>
+                    
+                    <button type="submit" class="btn-submit-form">
+                        Kirim Pesan <i class="fa-regular fa-paper-plane"></i>
+                    </button>
                 </form>
             </div>
+            
         </section>
     </main>
 
